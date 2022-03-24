@@ -71,7 +71,11 @@ namespace _20200140057_Tugas2_B
                     "insert into Transaksi (ID_Transaksi, ID_Pembeli, ID_Obat, Qty, Tgl_Pembelian) values ('T0003','PBL003','OBT001','4','20220311 08:25:51 AM')" +
                     "insert into Transaksi (ID_Transaksi, ID_Pembeli, ID_Obat, Qty, Tgl_Pembelian) values ('T0004','PBL004','OBT004','1','20220318 07:40:45 AM')" +
                     "insert into Transaksi (ID_Transaksi, ID_Pembeli, ID_Obat, Qty, Tgl_Pembelian) values ('T0005','PBL005','OBT005','1','20220324 10:10:32 AM')" +
-                    ); 
+                    "insert into Supply (ID_Supply, ID_Supplier, ID_Obat, Qty, Tgl_Supply) values ('SU01','S01','OBT003','3','20220214 08:25:51 AM')" +
+                    "insert into Supply (ID_Supply, ID_Supplier, ID_Obat, Qty, Tgl_Supply) values ('SU02','S02','OBT002','45','20220218 08:12:40 AM')" +
+                    "insert into Supply (ID_Supply, ID_Supplier, ID_Obat, Qty, Tgl_Supply) values ('SU03','S03','OBT001','30','20220225 11:21:32 AM')" +
+                    "insert into Supply (ID_Supply, ID_Supplier, ID_Obat, Qty, Tgl_Supply) values ('SU04','S04','OBT004','12','20220301 08:40:45 AM')" +
+                    "insert into Supply (ID_Supply, ID_Supplier, ID_Obat, Qty, Tgl_Supply) values ('SU05','S05','OBT005','11','20220302 10:00:35 AM')", con); 
             }
         }
         static void Main(string[] args)
