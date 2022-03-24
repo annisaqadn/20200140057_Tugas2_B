@@ -56,6 +56,11 @@ namespace _20200140057_Tugas2_B
                     "insert into Pegawai (ID_Pegawai, Nama_Pegawai, Alamat_Pegawai, No_Telpon, Jenis_Kelamin) values ('PGW03','Pragitya Faazha','Bandung','081623411738','P')" +
                     "insert into Pegawai (ID_Pegawai, Nama_Pegawai, Alamat_Pegawai, No_Telpon, Jenis_Kelamin) values ('PGW04','Aldy Ahmad','Pekalongan','082637199326','L')" +
                     "insert into Pegawai (ID_Pegawai, Nama_Pegawai, Alamat_Pegawai, No_Telpon, Jenis_Kelamin) values ('PGW05','Devina Shifra','Gunungkidul','081723916437','P')" +
+                    "insert into Obat (ID_Obat, Nama_Obat, Jenis_Obat, Harga_Obat, Stok_Obat, ID_Pegawai) values ('OBT001','Intunal','Tablet','Rp 4.000,00','100','PGW01')" +
+                    "insert into Obat (ID_Obat, Nama_Obat, Jenis_Obat, Harga_Obat, Stok_Obat, ID_Pegawai) values ('OBT002','OBH Combi Batuk Berdahak','Sirup','Rp 13.500,00','75','PGW02')" +
+                    "insert into Obat (ID_Obat, Nama_Obat, Jenis_Obat, Harga_Obat, Stok_Obat, ID_Pegawai) values ('OBT003','Sanmol 1 Strip 4 tablet','Tablet','Rp 1.568,00','55','PGW03')" +
+                    "insert into Obat (ID_Obat, Nama_Obat, Jenis_Obat, Harga_Obat, Stok_Obat, ID_Pegawai) values ('OBT004','Bye Bye Fever Bayi','Tempel','Rp 7.500,00','20','PGW04')" +
+                    "insert into Obat (ID_Obat, Nama_Obat, Jenis_Obat, Harga_Obat, Stok_Obat, ID_Pegawai) values ('OBT005','Degirol','Tablet','Rp 13.500,00','80','PGW05')" +
                     );
             }
         }
