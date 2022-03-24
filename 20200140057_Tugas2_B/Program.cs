@@ -66,7 +66,12 @@ namespace _20200140057_Tugas2_B
                     "insert into Supplier (ID_Supplier, Nama_Supplier, Alamat_Supplier, No_Telpon) values ('S03','Elfira Rahma','Magetan','087253834943')" +
                     "insert into Supplier (ID_Supplier, Nama_Supplier, Alamat_Supplier, No_Telpon) values ('S04','Jauza Aqilah','Lombok','082618949479')" +
                     "insert into Supplier (ID_Supplier, Nama_Supplier, Alamat_Supplier, No_Telpon) values ('S05','Tania Nahwa','Temanggung','081739058349')" +
-                    );
+                    "insert into Transaksi (ID_Transaksi, ID_Pembeli, ID_Obat, Qty, Tgl_Pembelian) values ('T0001','PBL001','OBT003','3','20220303 11:21:32 AM')" +
+                    "insert into Transaksi (ID_Transaksi, ID_Pembeli, ID_Obat, Qty, Tgl_Pembelian) values ('T0002','PBL002','OBT002','2','20220308 09:10:45 AM')" +
+                    "insert into Transaksi (ID_Transaksi, ID_Pembeli, ID_Obat, Qty, Tgl_Pembelian) values ('T0003','PBL003','OBT001','4','20220311 08:25:51 AM')" +
+                    "insert into Transaksi (ID_Transaksi, ID_Pembeli, ID_Obat, Qty, Tgl_Pembelian) values ('T0004','PBL004','OBT004','1','20220318 07:40:45 AM')" +
+                    "insert into Transaksi (ID_Transaksi, ID_Pembeli, ID_Obat, Qty, Tgl_Pembelian) values ('T0005','PBL005','OBT005','1','20220324 10:10:32 AM')" +
+                    ); 
             }
         }
         static void Main(string[] args)
