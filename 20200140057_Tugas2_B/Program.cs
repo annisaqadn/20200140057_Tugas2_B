@@ -38,6 +38,21 @@ namespace _20200140057_Tugas2_B
                 con.Close();
             }
         }
+        public void InsertData()
+        {
+            SqlConnection con = null;
+            try
+            {
+                con = new SqlConnection("data source=FUADIN;database=Akyun;Integrated Security = TRUE");
+                con.Open();
+
+                SqlCommand cm = new SqlCommand("insert into Pembeli (ID_Pembeli, Nama_Pembeli, Alamat_Pembeli, Jenis_Kelamin, No_Telpon) values ('PBL001','Tiara Sekarsini','Sumedang','P')" +
+                    "insert into Pembeli (ID_Pembeli, Nama_Pembeli, Alamat_Pembeli, Jenis_Kelamin, No_Telpon) values ('PBL002','Zahwa Ladya','Makassar','P')" +
+                    "insert into Pembeli (ID_Pembeli, Nama_Pembeli, Alamat_Pembeli, Jenis_Kelamin, No_Telpon) values ('PBL003','Savana Rizqi','Pati','P')" +
+                    "insert into Pembeli (ID_Pembeli, Nama_Pembeli, Alamat_Pembeli, Jenis_Kelamin, No_Telpon) values ('PBL004','Zahran Rafif','Yogyakarta','L')" +
+                    "insert into Pembeli (ID_Pembeli, Nama_Pembeli, Alamat_Pembeli, Jenis_Kelamin, No_Telpon) values ('PBL005','Alam Nurcahaya','Sleman','L')");
+            }
+        }
         static void Main(string[] args)
         {
             new Program().CreateTable();
