@@ -61,6 +61,11 @@ namespace _20200140057_Tugas2_B
                     "insert into Obat (ID_Obat, Nama_Obat, Jenis_Obat, Harga_Obat, Stok_Obat, ID_Pegawai) values ('OBT003','Sanmol 1 Strip 4 tablet','Tablet','Rp 1.568,00','55','PGW03')" +
                     "insert into Obat (ID_Obat, Nama_Obat, Jenis_Obat, Harga_Obat, Stok_Obat, ID_Pegawai) values ('OBT004','Bye Bye Fever Bayi','Tempel','Rp 7.500,00','20','PGW04')" +
                     "insert into Obat (ID_Obat, Nama_Obat, Jenis_Obat, Harga_Obat, Stok_Obat, ID_Pegawai) values ('OBT005','Degirol','Tablet','Rp 13.500,00','80','PGW05')" +
+                    "insert into Supplier (ID_Supplier, Nama_Supplier, Alamat_Supplier, No_Telpon) values ('S01','Adila Tsabita','Purwokerto','081382943871')" +
+                    "insert into Supplier (ID_Supplier, Nama_Supplier, Alamat_Supplier, No_Telpon) values ('S02','Safira Itsna','Klaten','085273844893')" +
+                    "insert into Supplier (ID_Supplier, Nama_Supplier, Alamat_Supplier, No_Telpon) values ('S03','Elfira Rahma','Magetan','087253834943')" +
+                    "insert into Supplier (ID_Supplier, Nama_Supplier, Alamat_Supplier, No_Telpon) values ('S04','Jauza Aqilah','Lombok','082618949479')" +
+                    "insert into Supplier (ID_Supplier, Nama_Supplier, Alamat_Supplier, No_Telpon) values ('S05','Tania Nahwa','Temanggung','081739058349')" +
                     );
             }
         }
