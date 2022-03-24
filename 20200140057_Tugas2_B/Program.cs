@@ -21,7 +21,7 @@ namespace _20200140057_Tugas2_B
                     + "Create table Pegawai (ID_Pegawai char(5) not null primary key, Nama_Pegawai varchar(50), Alamat_Pegawai varchar (30), No_Telpon char(12), Jenis_Kelamin char(1))" +
                     "Create table Obat (ID_Obat char(6) not null primary key, Nama_Obat varchar(30), Jenis_Obat varchar (20), Harga_Obat varchar (30), Stok_Obat varchar (5), ID_Pegawai char(5) FOREIGN KEY REFERENCES Pegawai(ID_Pegawai))"
                     + "Create table Supplier (ID_Supplier char(3) not null primary key, Nama_Supplier varchar(50), Alamat_Supplier varchar (30), No_Telpon char(12))" +
-                    "Create table Transaksi (ID_Transaksi char(5) not null primary key, ID_Pembeli char (6) FOREIGN KEY REFERENCES Pegawai(ID_Pegawai), ID_Obat char(6) FOREIGN KEY REFERENCES Obat(ID_Obat), Qty varchar(5), Tgl_Pembelian datetime)"
+                    "Create table Transaksi (ID_Transaksi char(5) not null primary key, ID_Pembeli char (6) FOREIGN KEY REFERENCES Pembeli(ID_Pembeli), ID_Obat char(6) FOREIGN KEY REFERENCES Obat(ID_Obat), Qty varchar(5), Tgl_Pembelian datetime)"
                     + "Create table Supply (ID_Supply char(4) not null primary key, ID_Supplier char (3) FOREIGN KEY REFERENCES Supplier(ID_Supplier), ID_Obat char(6) FOREIGN KEY REFERENCES Obat(ID_Obat), Qty varchar(5), Tgl_Supply datetime)", con);
                 cm.ExecuteNonQuery();
 
@@ -75,12 +75,26 @@ namespace _20200140057_Tugas2_B
                     "insert into Supply (ID_Supply, ID_Supplier, ID_Obat, Qty, Tgl_Supply) values ('SU02','S02','OBT002','45','20220218 08:12:40 AM')" +
                     "insert into Supply (ID_Supply, ID_Supplier, ID_Obat, Qty, Tgl_Supply) values ('SU03','S03','OBT001','30','20220225 11:21:32 AM')" +
                     "insert into Supply (ID_Supply, ID_Supplier, ID_Obat, Qty, Tgl_Supply) values ('SU04','S04','OBT004','12','20220301 08:40:45 AM')" +
-                    "insert into Supply (ID_Supply, ID_Supplier, ID_Obat, Qty, Tgl_Supply) values ('SU05','S05','OBT005','11','20220302 10:00:35 AM')", con); 
+                    "insert into Supply (ID_Supply, ID_Supplier, ID_Obat, Qty, Tgl_Supply) values ('SU05','S05','OBT005','11','20220302 10:00:35 AM')", con);
+                cm.ExecuteNonQuery();
+
+                Console.WriteLine("Sukses menambahkan data");
+                Console.ReadKey();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Gagal menambahkan data" + e);
+                Console.ReadKey();
+            }
+            finally
+            {
+                con.Close();
             }
         }
         static void Main(string[] args)
         {
             new Program().CreateTable();
+            new Program().InsertData();
         }
     }
 }
