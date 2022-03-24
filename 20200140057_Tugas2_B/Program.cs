@@ -46,11 +46,17 @@ namespace _20200140057_Tugas2_B
                 con = new SqlConnection("data source=FUADIN;database=Akyun;Integrated Security = TRUE");
                 con.Open();
 
-                SqlCommand cm = new SqlCommand("insert into Pembeli (ID_Pembeli, Nama_Pembeli, Alamat_Pembeli, Jenis_Kelamin, No_Telpon) values ('PBL001','Tiara Sekarsini','Sumedang','P')" +
-                    "insert into Pembeli (ID_Pembeli, Nama_Pembeli, Alamat_Pembeli, Jenis_Kelamin, No_Telpon) values ('PBL002','Zahwa Ladya','Makassar','P')" +
-                    "insert into Pembeli (ID_Pembeli, Nama_Pembeli, Alamat_Pembeli, Jenis_Kelamin, No_Telpon) values ('PBL003','Savana Rizqi','Pati','P')" +
-                    "insert into Pembeli (ID_Pembeli, Nama_Pembeli, Alamat_Pembeli, Jenis_Kelamin, No_Telpon) values ('PBL004','Zahran Rafif','Yogyakarta','L')" +
-                    "insert into Pembeli (ID_Pembeli, Nama_Pembeli, Alamat_Pembeli, Jenis_Kelamin, No_Telpon) values ('PBL005','Alam Nurcahaya','Sleman','L')");
+                SqlCommand cm = new SqlCommand("insert into Pembeli (ID_Pembeli, Nama_Pembeli, Alamat_Pembeli, Jenis_Kelamin, No_Telpon) values ('PBL001','Tiara Sekarsini','Sumedang','P','082722827291')" +
+                    "insert into Pembeli (ID_Pembeli, Nama_Pembeli, Alamat_Pembeli, Jenis_Kelamin, No_Telpon) values ('PBL002','Zahwa Ladya','Makassar','P','081638494733')" +
+                    "insert into Pembeli (ID_Pembeli, Nama_Pembeli, Alamat_Pembeli, Jenis_Kelamin, No_Telpon) values ('PBL003','Savana Rizqi','Pati','P','081642738398')" +
+                    "insert into Pembeli (ID_Pembeli, Nama_Pembeli, Alamat_Pembeli, Jenis_Kelamin, No_Telpon) values ('PBL004','Zahran Rafif','Yogyakarta','L','082663803826')" +
+                    "insert into Pembeli (ID_Pembeli, Nama_Pembeli, Alamat_Pembeli, Jenis_Kelamin, No_Telpon) values ('PBL005','Alam Nurcahaya','Sleman','L','081648949437')" +
+                    "insert into Pegawai (ID_Pegawai, Nama_Pegawai, Alamat_Pegawai, No_Telpon, Jenis_Kelamin) values ('PGW01','Belinda Nur','Yogyakarta','082722536471','P')" +
+                    "insert into Pegawai (ID_Pegawai, Nama_Pegawai, Alamat_Pegawai, No_Telpon, Jenis_Kelamin) values ('PGW02','Anggi Hasian','Surakarta','085362633993','L')" +
+                    "insert into Pegawai (ID_Pegawai, Nama_Pegawai, Alamat_Pegawai, No_Telpon, Jenis_Kelamin) values ('PGW03','Pragitya Faazha','Bandung','081623411738','P')" +
+                    "insert into Pegawai (ID_Pegawai, Nama_Pegawai, Alamat_Pegawai, No_Telpon, Jenis_Kelamin) values ('PGW04','Aldy Ahmad','Pekalongan','082637199326','L')" +
+                    "insert into Pegawai (ID_Pegawai, Nama_Pegawai, Alamat_Pegawai, No_Telpon, Jenis_Kelamin) values ('PGW05','Devina Shifra','Gunungkidul','081723916437','P')" +
+                    );
             }
         }
         static void Main(string[] args)
